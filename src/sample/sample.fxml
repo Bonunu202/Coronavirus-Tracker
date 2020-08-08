@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="369.0" prefWidth="343.0" style="-fx-background-color: rgb(47,79,79)rgb(47,79,79);" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label fx:id="label" alignment="CENTER" prefHeight="81.0" prefWidth="345.0" style="-fx-background-color: black;" text="CHOOSE COUNTRY" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Accidental Presidency" size="38.0" />
+         </font>
+      </Label>
+      <AnchorPane prefHeight="290.0" prefWidth="343.0">
+         <children>
+            <TextField fx:id="text" layoutX="20.0" layoutY="20.0" prefHeight="36.0" prefWidth="231.0" promptText="Enter a country to get data" style="-fx-background-radius: 0;">
+               <font>
+                  <Font name="Acumin Pro Semibold" size="14.0" />
+               </font></TextField>
+            <Button fx:id="submit" layoutX="262.0" layoutY="20.0" mnemonicParsing="false" onAction="#getCases" prefHeight="36.0" prefWidth="59.0" style="-fx-background-radius: 0;" text="Submit" />
+            <Label alignment="CENTER" layoutX="60.0" layoutY="72.0" prefHeight="33.0" prefWidth="222.0" text="Total Cases" textFill="WHITE">
+               <font>
+                  <Font name="Acumin Pro Semibold" size="27.0" />
+               </font>
+            </Label>
+            <Label fx:id="cases" alignment="CENTER" layoutX="60.0" layoutY="105.0" prefHeight="33.0" prefWidth="222.0" text="N/A" textFill="#eeff00">
+               <font>
+                  <Font name="Acumin Pro Semibold" size="23.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="60.0" layoutY="138.0" prefHeight="33.0" prefWidth="222.0" text="Total Deaths" textFill="WHITE">
+               <font>
+                  <Font name="Acumin Pro Semibold" size="27.0" />
+               </font>
+            </Label>
+            <Label fx:id="deaths" alignment="CENTER" layoutX="60.0" layoutY="171.0" prefHeight="33.0" prefWidth="222.0" text="N/A" textFill="#eeff00">
+               <font>
+                  <Font name="Acumin Pro Semibold" size="23.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="60.0" layoutY="204.0" prefHeight="33.0" prefWidth="222.0" text="Total Recovered" textFill="WHITE">
+               <font>
+                  <Font name="Acumin Pro Semibold" size="27.0" />
+               </font>
+            </Label>
+            <Label fx:id="recovered" alignment="CENTER" layoutX="60.0" layoutY="237.0" prefHeight="33.0" prefWidth="222.0" text="N/A" textFill="#eeff00">
+               <font>
+                  <Font name="Acumin Pro Semibold" size="23.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

@@ -39,7 +39,6 @@ public class Main extends Application {
         c.print("Successfully connected to COVID-19 API");
         String inline = "";
         conn.connect();
-        int responsecode = conn.getResponseCode();
 
         Scanner sc = new Scanner(url.openStream());
         while (sc.hasNext()) {
@@ -48,8 +47,8 @@ public class Main extends Application {
         sc.close();
 
         JSONParser parse = new JSONParser();
-        JSONObject jobj = (JSONObject) parse.parse(inline);
-        JSONArray jsonarr_1 = (JSONArray) jobj.get("Countries");
+        JSONObject jsonObj = (JSONObject) parse.parse(inline);
+        JSONArray jsonarr_1 = (JSONArray) jsonObj.get("Countries");
 
 
         for (int i = 0; i < jsonarr_1.size(); i++) {
